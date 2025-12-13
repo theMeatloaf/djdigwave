@@ -1,0 +1,343 @@
+AWSTATS DATA FILE 8.0 (build 20240604)
+# If you remove this file, all statistics for date 202512 will be lost/reset.
+# Last config file used to build this data file was /home/djdienrb/tmp/awstats/awstats.djdigwave.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2081                
+POS_TIME 2763                
+POS_VISITOR 3428                
+POS_DAY 5295                
+POS_DOMAIN 5445                
+POS_LOGIN 5698                
+POS_ROBOT 5853                
+POS_WORMS 6024                
+POS_EMAILSENDER 6155                
+POS_EMAILRECEIVER 6298                
+POS_SESSION 6374                
+POS_FILESIZE 8640                
+POS_REQUESTTIME 8780                
+POS_SIDER 6511                
+POS_FILETYPES 6763                
+POS_DOWNLOADS 6913                
+POS_OS 7034                
+POS_BROWSER 7159                
+POS_SCREENSIZE 7418                
+POS_UNKNOWNREFERER 7492                
+POS_UNKNOWNREFERERBROWSER 7799                
+POS_ORIGIN 7908                
+POS_SEREFERRALS 8042                
+POS_PAGEREFS 8186                
+POS_SEARCHWORDS 8334                
+POS_KEYWORDS 8486                
+POS_MISC 2427                
+POS_ERRORS 8545                
+POS_CLUSTER 5554                
+POS_SIDER_404 8866                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20251213161152 224 45643 17885822812509
+FirstTime 20251213160847
+LastTime 20251213161152
+LastUpdate 20251213161324 224 0 224 0 0
+TotalVisits 19                  
+TotalUnique 19                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 40                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+AddToFavourites 0 2 0
+RealPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+JavaEnabled 0 0 0
+DirectorSupport 0 0 0
+PDFSupport 0 0 0
+QuickTimeSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+TotalMisc 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 0 0 0
+1 0 0 0 0 0 0
+2 0 0 0 0 0 0
+3 0 0 0 0 0 0
+4 0 0 0 0 0 0
+5 0 0 0 0 0 0
+6 0 0 0 0 0 0
+7 0 0 0 0 0 0
+8 0 0 0 0 0 0
+9 0 0 0 0 0 0
+10 0 0 0 0 0 0
+11 0 0 0 0 0 0
+12 0 0 0 0 0 0
+13 0 0 0 0 0 0
+14 0 0 0 0 0 0
+15 0 0 0 0 0 0
+16 54 134 872875 86 90 116866
+17 0 0 0 0 0 0
+18 0 0 0 0 0 0
+19 0 0 0 0 0 0
+20 0 0 0 0 0 0
+21 0 0 0 0 0 0
+22 0 0 0 0 0 0
+23 0 0 0 0 0 0
+END_TIME
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 40
+65.87.7.112 24 24 80928 20251213160944 20251213160921 /
+205.169.39.242 4 15 137174 20251213160930 20251213160920 /nc_assets/fonts/museo-sans-300-webfont.woff
+34.72.176.129 4 22 172640 20251213160954 20251213160905 /nc_assets/fonts/museo-sans-300-webfont.woff
+205.169.39.55 3 14 135336 20251213161152 20251213161152 /nc_assets/fonts/museo-sans-300-webfont.woff
+104.197.69.115 3 5 124576 20251213161100 20251213160910 /nc_assets/fonts/museo-sans-700-webfont.woff
+167.71.175.236 2 2 6890 20251213160920 20251213160847 /
+146.190.242.161 2 2 6914 20251213160920 20251213160847 /
+64.15.129.112 1 1 5052 20251213161032 20251213161032 /
+192.175.111.252 1 1 5052 20251213161032 20251213161032 /
+18.158.191.233 1 1 1838 20251213160937 20251213160937 /
+34.122.147.229 1 13 63390 20251213161100 20251213161100 /
+192.175.111.248 1 2 5789 20251213161035 20251213161035 /
+192.175.111.251 1 1 5064 20251213161037 20251213161037 /
+64.15.129.108 1 1 5052 20251213161035 20251213161035 /
+34.123.170.104 1 2 45402 20251213161100 20251213161100 /nc_assets/fonts/museo-sans-300-webfont.woff
+64.15.129.125 1 1 5064 20251213161038 20251213161038 /
+18.158.213.240 1 1 1838 20251213161114 20251213161114 /
+192.175.111.253 1 1 5052 20251213161034 20251213161034 /
+64.15.129.119 1 1 5064 20251213161035 20251213161035 /
+34.133.72.112 0 1 91 
+35.236.25.141 0 1 91 
+192.175.111.229 0 1 725 
+205.169.39.54 0 1 10161 
+34.175.47.170 0 1 91 
+64.15.129.110 0 1 546 
+205.169.39.20 0 1 1017 
+64.15.129.114 0 2 2779 
+192.175.111.234 0 1 1058 
+205.169.39.11 0 1 17060 
+64.15.129.101 0 1 1341 
+91.199.212.132 0 2 182 
+64.15.129.100 0 1 1088 
+192.175.111.254 0 2 1984 
+192.175.111.232 0 1 1088 
+64.15.129.124 0 1 670 
+64.15.129.126 0 1 1058 
+205.169.39.21 0 1 12490 
+34.40.31.46 0 1 91 
+192.175.111.249 0 1 670 
+205.169.39.16 0 1 479 
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 1
+20251213 54 134 872875 19
+END_DAY
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 3
+us 46 110 818497
+ca 8 22 54196
+gb 0 2 182
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 1
+no_user_agent 2 10116 20251213160847 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Session range - Number of visits
+BEGIN_SESSION 0
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 3
+/ 44 149900 17 0
+/nc_assets/fonts/museo-sans-700-webfont.woff 5 166710 0 0
+/nc_assets/fonts/museo-sans-300-webfont.woff 5 176205 2 0
+END_SIDER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 5
+css 5 12345 0 0
+woff 10 342915 0 0
+html 44 149900 0 0
+png 69 367169 0 0
+txt 6 546 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/.well-known/pki-validation/EA1DF043E7E7873D25D679F700BE5A3D.txt 6 0 546
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 5
+win10 56 15
+Unknown 34 28
+android13 1 1
+win7 1 1
+linux 42 9
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 11
+chrome79.0.3945.79 14 3
+netscape5.0 4 4
+chrome83.0.4103.61 1 1
+edge12 1 1
+mozilla 24 24
+Unknown 6 0
+chrome112.0.0.0 1 1
+chrome106.0.0.0 5 0
+chrome125.0.0.0 42 9
+chrome117.0.5938.132 14 3
+chrome143.0.0.0 22 8
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 3
+Sectigo_DCV 20251213160729
+Mozilla/5.0_(compatible;_Let's_Encrypt_validation_server;__https://www.letsencrypt.org) 20251213160944
+Mozilla/5.0_(l9scan/2.0.532323e2731313e24363e2239313;__https://leakix.net) 20251213160920
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+Sectigo_DCV 20251213160729
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 44 69
+From1 0 0
+From2 0 0
+From3 0 0
+From4 10 65
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 3
+301 4 0
+403 2 2484
+404 78 87570
+END_ERRORS
+
+# Payload Range - Payload Frequency
+BEGIN_FILESIZE 7
+1K-2K 97
+0-44 20
+5K+ 35
+44-100 6
+2K-5K 38
+100-500 16
+500-1K 12
+END_FILESIZE
+
+# Request Time Range - Request Time Frequency
+BEGIN_REQUESTTIME 0
+END_REQUESTTIME
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 32
+/graphql 2 -
+/server 2 -
+/.DS_Store 2 -
+/swagger-ui.html 2 -
+/webjars/swagger-ui/index.html 2 -
+/ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application 2 -
+/.vscode/sftp.json 2 -
+/v2/api-docs 2 -
+/api-docs/swagger.json 2 -
+/v3/api-docs 2 -
+/graphql/api 2 -
+/swagger.json 2 -
+/login.action 2 -
+/about 2 -
+/@vite/env 2 -
+/info.php 2 -
+/s/532323e2731313e24363e2239313/_/ 2 -
+/.env 2 -
+/api 2 -
+/api/gql 2 -
+/v2/_catalog 2 -
+/api/swagger.json 2 -
+/swagger/index.html 2 -
+/swagger/swagger-ui.html 2 -
+/debug/default/view 2 -
+/swagger/v1/swagger.json 2 -
+/telescope/requests 2 -
+/api/graphql 2 -
+/actuator/env 2 -
+/config.json 2 -
+/_all_dbs 2 -
+/_next 16 -
+END_SIDER_404

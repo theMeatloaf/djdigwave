@@ -1,0 +1,61 @@
+--- 
+files: 
+  certificate: 
+    djdigwave_com_e3bf7_4c9ab_1797206399_6b70d8ebe91627b1b0c606d92f2d505b: 
+      created: '1765660344'
+      domains: 
+        - djdigwave.com
+        - www.djdigwave.com
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: 32848776
+      id: djdigwave_com_e3bf7_4c9ab_1797206399_6b70d8ebe91627b1b0c606d92f2d505b
+      is_self_signed: 0
+      issuer.commonName: Sectigo Public Server Authentication CA DV R36
+      issuer.organizationName: Sectigo Limited
+      key_algorithm: rsaEncryption
+      modulus: e3bf76b472edf294606850e77f537d3dfad641050f5537bae479d021b4dfc6636dbd9df6d36948fa8874677ce38f2c702d139b8afc9349fc513d5eefb30ea787acf5bcf18eeee0358e94221f6d088ea192f7d76e1d69605138ea6b85d0d3b7fc7145578e9f165b00d627ddf5049a1b66c40c0e9ff9f3eb28e9b711ab12423436965275cf6298c2a8b31071fe5ef989da23a3910e56553eb2cbfe34df8e31572cec8438f26c47a79efe71d3be40be1139ca3064b82980524ed26bc4e32fbc32abb6846ec7230258eed03c595367bf95189010d52c3d18368a210fa5d2351a11e697e75d85304c619ee004781e78503e0944dbb6242d2056d42c94018f9894c9ab
+      modulus_length: 2048
+      not_after: '1797206399'
+      not_before: '1765584000'
+      serial: c7146718bc6fb1da8e9a87380c2c6ea5
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: djdigwave.com
+      validation_type: dv
+  csr: {}
+
+  key: 
+    e3bf7_4c9ab_4e5919aa99cd081ab89d26fa400b8e66: 
+      created: '1765659723'
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: nc_module_key_32848776
+      id: e3bf7_4c9ab_4e5919aa99cd081ab89d26fa400b8e66
+      key_algorithm: rsaEncryption
+      modulus: e3bf76b472edf294606850e77f537d3dfad641050f5537bae479d021b4dfc6636dbd9df6d36948fa8874677ce38f2c702d139b8afc9349fc513d5eefb30ea787acf5bcf18eeee0358e94221f6d088ea192f7d76e1d69605138ea6b85d0d3b7fc7145578e9f165b00d627ddf5049a1b66c40c0e9ff9f3eb28e9b711ab12423436965275cf6298c2a8b31071fe5ef989da23a3910e56553eb2cbfe34df8e31572cec8438f26c47a79efe71d3be40be1139ca3064b82980524ed26bc4e32fbc32abb6846ec7230258eed03c595367bf95189010d52c3d18368a210fa5d2351a11e697e75d85304c619ee004781e78503e0944dbb6242d2056d42c94018f9894c9ab
+      modulus_length: 2048
+indexes: 
+  certificate: 
+    modulus: 
+      e3bf76b472edf294606850e77f537d3dfad641050f5537bae479d021b4dfc6636dbd9df6d36948fa8874677ce38f2c702d139b8afc9349fc513d5eefb30ea787acf5bcf18eeee0358e94221f6d088ea192f7d76e1d69605138ea6b85d0d3b7fc7145578e9f165b00d627ddf5049a1b66c40c0e9ff9f3eb28e9b711ab12423436965275cf6298c2a8b31071fe5ef989da23a3910e56553eb2cbfe34df8e31572cec8438f26c47a79efe71d3be40be1139ca3064b82980524ed26bc4e32fbc32abb6846ec7230258eed03c595367bf95189010d52c3d18368a210fa5d2351a11e697e75d85304c619ee004781e78503e0944dbb6242d2056d42c94018f9894c9ab: 
+        djdigwave_com_e3bf7_4c9ab_1797206399_6b70d8ebe91627b1b0c606d92f2d505b: ~
+    subject.commonName: 
+      djdigwave.com: 
+        djdigwave_com_e3bf7_4c9ab_1797206399_6b70d8ebe91627b1b0c606d92f2d505b: ~
+  csr: 
+    commonName: {}
+
+    modulus: {}
+
+uniques: 
+  certificate: 
+    friendly_name: 
+      32848776: djdigwave_com_e3bf7_4c9ab_1797206399_6b70d8ebe91627b1b0c606d92f2d505b
+  csr: 
+    friendly_name: {}
+
+  key: 
+    friendly_name: 
+      nc_module_key_32848776: e3bf7_4c9ab_4e5919aa99cd081ab89d26fa400b8e66
+    modulus:ecdsa_curve_name:ecdsa_public: 
+      e3bf76b472edf294606850e77f537d3dfad641050f5537bae479d021b4dfc6636dbd9df6d36948fa8874677ce38f2c702d139b8afc9349fc513d5eefb30ea787acf5bcf18eeee0358e94221f6d088ea192f7d76e1d69605138ea6b85d0d3b7fc7145578e9f165b00d627ddf5049a1b66c40c0e9ff9f3eb28e9b711ab12423436965275cf6298c2a8b31071fe5ef989da23a3910e56553eb2cbfe34df8e31572cec8438f26c47a79efe71d3be40be1139ca3064b82980524ed26bc4e32fbc32abb6846ec7230258eed03c595367bf95189010d52c3d18368a210fa5d2351a11e697e75d85304c619ee004781e78503e0944dbb6242d2056d42c94018f9894c9ab: e3bf7_4c9ab_4e5919aa99cd081ab89d26fa400b8e66
