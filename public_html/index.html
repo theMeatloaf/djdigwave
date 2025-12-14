@@ -18,9 +18,12 @@
     <div class="stars5"></div>
 
     <header class="hero">
+        <div class="hero-waves">
+            <div class="waves-parallax"></div>
+        </div>
         <div class="container">
             <div class="logo-container">
-                <img src="images/logo5.png" alt="DJ Dig Wave Logo" class="main-logo">
+                <img src="images/logo.png" alt="DJ Dig Wave Logo" class="main-logo">
             </div>
             <h1 class="glitch" data-text="DJ DIG WAVE">DJ DIG WAVE</h1>
             <p class="tagline">Retro Vibes & Modern Beats</p>
@@ -111,16 +114,18 @@
             });
         });
 
-        // Parallax effect for stars
+        // Parallax effect for stars and waves
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
             const stars = document.querySelector('.stars');
             const stars2 = document.querySelector('.stars2');
             const stars3 = document.querySelector('.stars3');
+            const waves = document.querySelector('.waves-parallax');
 
             if (stars) stars.style.transform = `translateY(${scrolled * 0.5}px)`;
             if (stars2) stars2.style.transform = `translateY(${scrolled * 0.3}px)`;
             if (stars3) stars3.style.transform = `translateY(${scrolled * 0.7}px)`;
+            if (waves) waves.style.transform = `translateY(${scrolled * 0.15}px)`;
         });
     </script>
 </body>
