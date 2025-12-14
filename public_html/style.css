@@ -109,10 +109,10 @@ body {
     background-repeat: repeat-x;
     background-size: 150px auto;
     background-position: bottom;
-    opacity: 0.7;
+    opacity: 0;
     filter: drop-shadow(0 0 30px rgba(0, 217, 255, 0.4));
-    animation: slideInFromBottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards,
-               waveSway 6s ease-in-out 1.5s infinite;
+    animation: slideInFromBottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 5.36s forwards,
+               waveSway 6s ease-in-out 6.86s infinite;
     transform: translateY(100%);
 }
 
@@ -171,7 +171,36 @@ body {
     filter: drop-shadow(0 0 40px rgba(255, 27, 141, 0.6))
             drop-shadow(0 0 80px rgba(0, 217, 255, 0.4));
     position: relative;
-    animation: chromatic 8s ease-in-out infinite;
+    opacity: 0;
+    animation: glitchFadeIn 0.96s ease-out 0.36s forwards, chromatic 8s ease-in-out 1.8s infinite;
+}
+
+@keyframes glitchFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95) translateX(-10px);
+        filter:
+            drop-shadow(20px 0 0 rgba(255, 0, 0, 0.8))
+            drop-shadow(-20px 0 0 rgba(0, 255, 255, 0.8))
+            brightness(0.5);
+    }
+    25% {
+        transform: scale(1.02) translateX(5px);
+        filter:
+            drop-shadow(10px 0 0 rgba(255, 0, 0, 0.5))
+            drop-shadow(-10px 0 0 rgba(0, 255, 255, 0.5))
+            brightness(1.2);
+    }
+    50% {
+        transform: scale(0.98) translateX(-3px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateX(0);
+        filter:
+            drop-shadow(0 0 40px rgba(255, 27, 141, 0.6))
+            drop-shadow(0 0 80px rgba(0, 217, 255, 0.4));
+    }
 }
 
 @keyframes chromatic {
@@ -234,9 +263,56 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: gradientShift 3s ease infinite;
     text-shadow: 0 0 80px rgba(255, 27, 141, 0.5);
     position: relative;
+    opacity: 0;
+    animation: textGlitchIn 0.72s ease-out 1.44s forwards, gradientShift 3s ease 2.4s infinite;
+}
+
+@keyframes textGlitchIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+        text-shadow:
+            20px 0 20px rgba(255, 0, 0, 1),
+            -20px 0 20px rgba(0, 255, 255, 1),
+            0 0 80px rgba(255, 27, 141, 0.5);
+    }
+    20% {
+        transform: translateY(-10px) scale(1.05);
+        text-shadow:
+            10px 0 10px rgba(255, 0, 0, 0.7),
+            -10px 0 10px rgba(0, 255, 255, 0.7),
+            0 0 80px rgba(255, 27, 141, 0.5);
+    }
+    40% {
+        transform: translateY(-5px) scale(0.95);
+        text-shadow:
+            -5px 0 5px rgba(255, 0, 0, 0.5),
+            5px 0 5px rgba(0, 255, 255, 0.5),
+            0 0 80px rgba(255, 27, 141, 0.5);
+    }
+    60% {
+        transform: translateY(5px) scale(1.02);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        text-shadow: 0 0 80px rgba(255, 27, 141, 0.5);
+    }
+}
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
 }
 
 @keyframes gradientShift {
@@ -289,14 +365,17 @@ body {
     letter-spacing: 4px;
     margin-bottom: 1rem;
     text-shadow: 0 0 20px rgba(0, 255, 159, 0.8);
+    opacity: 0;
+    animation: fadeSlideIn 0.72s ease-out 2.16s forwards;
 }
 
 .scroll-indicator {
     margin-top: 3rem;
-    animation: bounce 2s infinite;
     font-size: 2rem;
     color: var(--neon-cyan);
     text-shadow: 0 0 20px var(--neon-cyan);
+    opacity: 0;
+    animation: fadeSlideIn 0.72s ease-out 2.64s forwards, bounce 2s 3.36s infinite;
 }
 
 @keyframes bounce {
