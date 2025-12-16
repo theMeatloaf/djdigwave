@@ -497,18 +497,18 @@ section {
     height: 400px;
 }
 
-.youtube {
-    border-color: var(--neon-pink);
-    box-shadow: 0 0 30px rgba(255, 27, 141, 0.3);
+.soundcloud {
+    border-color: var(--neon-orange);
+    box-shadow: 0 0 30px rgba(255, 107, 53, 0.3);
 }
 
-.youtube::before {
-    background: radial-gradient(circle, rgba(255, 27, 141, 0.2) 0%, transparent 70%);
+.soundcloud::before {
+    background: radial-gradient(circle, rgba(255, 107, 53, 0.2) 0%, transparent 70%);
 }
 
-.youtube:hover {
-    border-color: var(--neon-pink);
-    box-shadow: 0 0 50px rgba(255, 27, 141, 0.6);
+.soundcloud:hover {
+    border-color: var(--neon-orange);
+    box-shadow: 0 0 50px rgba(255, 107, 53, 0.6);
     transform: translateY(-10px) scale(1.02);
 }
 
