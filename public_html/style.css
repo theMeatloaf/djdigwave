@@ -108,11 +108,11 @@ body {
     background-image: url('images/waves.png');
     background-repeat: repeat-x;
     background-size: 150px auto;
-    background-position: bottom;
+    background-position: 0 bottom;
     opacity: 0;
     filter: drop-shadow(0 0 30px rgba(0, 217, 255, 0.4));
-    animation: slideInFromBottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 5.36s forwards,
-               waveSway 6s ease-in-out 6.86s infinite;
+    animation: slideInFromBottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.5s forwards,
+               waveSway 6s linear 4s infinite;
     transform: translateY(100%);
 }
 
@@ -128,11 +128,11 @@ body {
 }
 
 @keyframes waveSway {
-    0%, 100% {
-        transform: translateX(0);
+    from {
+        background-position: 0 bottom;
     }
-    50% {
-        transform: translateX(15px);
+    to {
+        background-position: 150px bottom;
     }
 }
 
@@ -423,6 +423,37 @@ section {
             0 0 10px var(--neon-cyan),
             0 0 20px var(--neon-pink),
             0 0 40px var(--neon-pink);
+    }
+}
+
+/* Safari Desktop - Reduced neon effect */
+@media not all and (hover: none) {
+    @supports (-webkit-appearance:none) and (not (-moz-appearance:none)) {
+        .neon-text {
+            text-shadow:
+                0 0 5px var(--neon-cyan),
+                0 0 10px var(--neon-cyan),
+                0 0 20px var(--neon-pink),
+                0 0 40px var(--neon-pink);
+            animation: neonPulseSafari 2s ease-in-out infinite;
+        }
+
+        @keyframes neonPulseSafari {
+            0%, 100% {
+                text-shadow:
+                    0 0 5px var(--neon-cyan),
+                    0 0 10px var(--neon-cyan),
+                    0 0 20px var(--neon-pink),
+                    0 0 40px var(--neon-pink);
+            }
+            50% {
+                text-shadow:
+                    0 0 2.5px var(--neon-cyan),
+                    0 0 5px var(--neon-cyan),
+                    0 0 10px var(--neon-pink),
+                    0 0 20px var(--neon-pink);
+            }
+        }
     }
 }
 
