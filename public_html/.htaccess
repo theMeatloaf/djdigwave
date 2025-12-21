@@ -1,0 +1,11 @@
+# Enable clean URLs - remove .html extension
+RewriteEngine On
+RewriteBase /
+
+# Don't apply rules to actual files and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Add .html extension internally if the file exists
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]

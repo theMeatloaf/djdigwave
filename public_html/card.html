@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DJ Dig Wave - Contact and Demo Mixes">
+    <title>DJ Dig Wave - Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Audiowide&display=swap" rel="stylesheet">
+    <style>
+        /* Contact Form Styles */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 2px solid rgba(0, 217, 255, 0.3);
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 217, 255, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--neon-cyan);
+            font-weight: 700;
+            text-shadow: 0 0 10px var(--neon-cyan);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(10, 10, 15, 0.6);
+            border: 2px solid rgba(255, 27, 141, 0.3);
+            border-radius: 8px;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--neon-pink);
+            box-shadow: 0 0 20px rgba(255, 27, 141, 0.4);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 1.2rem 2rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            font-family: 'Orbitron', sans-serif;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, var(--neon-pink), var(--neon-purple));
+            border: 3px solid var(--neon-cyan);
+            border-radius: 50px;
+            box-shadow:
+                0 0 30px rgba(255, 27, 141, 0.5),
+                inset 0 0 20px rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .submit-button:hover::before {
+            left: 100%;
+        }
+
+        .submit-button:hover {
+            transform: scale(1.05);
+            box-shadow:
+                0 0 50px rgba(255, 27, 141, 0.8),
+                0 0 100px rgba(0, 217, 255, 0.5),
+                inset 0 0 30px rgba(255, 255, 255, 0.2);
+        }
+
+        /* SoundCloud Section */
+        .soundcloud-section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .soundcloud-embed {
+            background: rgba(255, 255, 255, 0.02);
+            border: 2px solid rgba(255, 107, 53, 0.3);
+            border-radius: 15px;
+            padding: 1rem;
+            box-shadow: 0 0 30px rgba(255, 107, 53, 0.2);
+        }
+
+        .soundcloud-embed iframe {
+            border-radius: 10px;
+        }
+
+        /* Back Link */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: var(--neon-green);
+            background: rgba(0, 255, 159, 0.05);
+            border: 2px solid var(--neon-green);
+            border-radius: 25px;
+            box-shadow: 0 0 20px rgba(0, 255, 159, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(0, 255, 159, 0.1);
+            box-shadow: 0 0 30px rgba(0, 255, 159, 0.4);
+            transform: translateX(-5px);
+        }
+
+        /* Form Messages */
+        .form-message {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            padding: 1.2rem;
+            border-radius: 10px;
+            font-weight: 700;
+            text-align: center;
+            animation: slideDown 0.5s ease-out;
+        }
+
+        .form-message.success {
+            background: rgba(0, 255, 159, 0.1);
+            border: 2px solid var(--neon-green);
+            color: var(--neon-green);
+            box-shadow: 0 0 30px rgba(0, 255, 159, 0.3);
+        }
+
+        .form-message.error {
+            background: rgba(255, 27, 141, 0.1);
+            border: 2px solid var(--neon-pink);
+            color: var(--neon-pink);
+            box-shadow: 0 0 30px rgba(255, 27, 141, 0.3);
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hero Intro Section */
+        .hero-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            padding: 2rem;
+        }
+
+        .hero-intro h1 {
+            font-family: 'Audiowide', sans-serif;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 1.5rem;
+            background: linear-gradient(90deg, var(--neon-cyan), var(--neon-pink), var(--neon-green));
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 3s ease infinite;
+            text-shadow: 0 0 40px rgba(255, 27, 141, 0.5);
+        }
+
+        .hero-intro p {
+            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+            text-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+        }
+
+        .hero-intro .highlight {
+            color: var(--neon-green);
+            font-weight: 700;
+            text-shadow: 0 0 15px var(--neon-green);
+        }
+
+        @media (max-width: 768px) {
+            .hero-intro {
+                padding: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .contact-form {
+                padding: 1.5rem;
+            }
+
+            .soundcloud-embed {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+    <div class="stars4"></div>
+    <div class="stars5"></div>
+
+    <section id="contact-form" class="contact-section" style="padding-top: 60px;">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <span>←</span>
+                <span>Back to Home</span>
+            </a>
+
+            <div class="hero-intro">
+                <h1>Ready to Ride the Wave?</h1>
+                <p>
+                    Transform your event into an unforgettable experience with <span class="highlight">retro vibes and modern beats</span> that keep the dance floor alive. Fill out the form below and let's make some magic happen!
+                </p>
+            </div>
+
+            <div id="formMessage"></div>
+            <form class="contact-form" action="send-email.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">
+                    <span>Send Message</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section id="soundcloud" class="connect-section">
+        <div class="container">
+            <h2 class="section-title neon-text">Demo Mixes</h2>
+            <div class="soundcloud-section">
+                <div class="soundcloud-embed">
+                    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%3Aplaylists%3A2159196308%3Fsecret_token%3Ds-eIzMsfe9i2r&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/squirlgod-1" title="DJ DigWave" target="_blank" style="color: #cccccc; text-decoration: none;">DJ DigWave</a> · <a href="https://soundcloud.com/squirlgod-1/sets/dj-digwave-demo/s-eIzMsfe9i2r" title="DJ DigWave Demo" target="_blank" style="color: #cccccc; text-decoration: none;">DJ DigWave Demo</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 DJ Dig Wave. All rights reserved.</p>
+            <div class="footer-wave"></div>
+        </div>
+    </footer>
+
+    <script>
+        // Display form messages based on URL parameters
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const messageDiv = document.getElementById('formMessage');
+
+            if (urlParams.get('success') === '1') {
+                messageDiv.innerHTML = '<div class="form-message success">✓ Message sent successfully! I\'ll get back to you soon.</div>';
+                messageDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                // Clear form
+                document.querySelector('.contact-form').reset();
+
+                // Remove URL parameters after 3 seconds
+                setTimeout(() => {
+                    window.history.replaceState({}, '', 'card.html');
+                }, 3000);
+            } else if (urlParams.get('error')) {
+                const errorType = urlParams.get('error');
+                let errorMessage = '✗ An error occurred. Please try again.';
+
+                switch(errorType) {
+                    case 'missing':
+                        errorMessage = '✗ Please fill in all required fields.';
+                        break;
+                    case 'invalid_email':
+                        errorMessage = '✗ Please enter a valid email address.';
+                        break;
+                    case 'send_failed':
+                        errorMessage = '✗ Failed to send message. Please try again or email directly.';
+                        break;
+                }
+
+                messageDiv.innerHTML = `<div class="form-message error">${errorMessage}</div>`;
+                messageDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        });
+
+        // Parallax effect for stars
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const stars = document.querySelector('.stars');
+            const stars2 = document.querySelector('.stars2');
+            const stars3 = document.querySelector('.stars3');
+
+            if (stars) stars.style.transform = `translateY(${scrolled * 0.5}px)`;
+            if (stars2) stars2.style.transform = `translateY(${scrolled * 0.3}px)`;
+            if (stars3) stars3.style.transform = `translateY(${scrolled * 0.7}px)`;
+        });
+    </script>
+</body>
+</html>
